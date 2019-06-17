@@ -1,0 +1,16 @@
+name: Orbit
+main: com.crystalcraftmc.orbit.main.Orbit
+version: 0.1
+author: Jwood9198
+website: http://crystalcraftmc.com
+
+commands:
+   orbitdelete:
+      description: /<command> <_near | all_> If you specify near and you are inside the sphere of an asteroid's orbit, it will be removed from orbit.  Specifying all will simply remove all asteroids from orbit assigned to your name.
+      usage: /<command> <_near | all_>
+   orbitadmindelete:
+      description: Removes all asteroids from orbit of a specified player
+      usage: /<command> <pname>
+   orbitperms:
+      description: Gives or removes perms to use orbitadmin commands and asteroid flags
+      usage: /<command> <_add | remove_> <pname>
