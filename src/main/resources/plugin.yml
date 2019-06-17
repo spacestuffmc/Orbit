@@ -1,8 +1,7 @@
 name: Orbit
-main: com.crystalcraftmc.orbit.main.Orbit
+main: com.spacestuffmc.orbit.OrbitMain
 version: 0.1
-author: Jwood9198
-website: http://crystalcraftmc.com
+author: TheOnlineWorld
 
 commands:
    orbitdelete:

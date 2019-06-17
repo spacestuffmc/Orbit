@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright 2015 CrystalCraftMC
+  ~ Copyright 2019 SpaceStuffMC
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -20,13 +20,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.crystalcraftmc.orbit</groupId>
+    <groupId>com.spacestuffmc.orbit</groupId>
     <artifactId>Orbit</artifactId>
-    <version>1.8.6-R0.1-SNAPSHOT</version>
+    <version>1.8.6</version>
 
     <profiles>
         <profile>
-            <id>com.crystalcraftmc.orbit</id>
+            <id>com.SpaceStuffMC.orbit</id>
             <build>
                 <finalName>Orbit</finalName>
                 <directory>src/main/java/</directory>
@@ -63,16 +63,23 @@
     </repositories>
 
     <dependencies>
+        <!-- SpigotAPI -->
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.8.6-R0.1-SNAPSHOT</version>
+            <version>1.13.2-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot</artifactId>
+            <version>1.13-R0.1-SNAPSHOT</version>
+        </dependency>
+        <!-- BukkitAPI -->
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <version>1.8.6-R0.1-SNAPSHOT</version>
-            <type>jar</type>
+            <version>1.13.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
