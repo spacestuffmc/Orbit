@@ -31,7 +31,7 @@ public class Config {
 	/**Initializes the config settings
 	 */
 	public static void initializeConfig(OrbitMain o) {
-		File file = new File("OrbitFiles\\config.txt");
+		File file = new File("OrbitFiles\\config.yml");
 		if(!file.exists()) {
 			if(!new File("OrbitFiles").exists())
 				new File("OrbitFiles").mkdir();
@@ -80,7 +80,7 @@ public class Config {
 	/**Updates the config file
 	 */
 	public static void updateConfig(OrbitMain o) {
-		File file = new File("OrbitFiles\\config.txt");
+		File file = new File("OrbitFiles\\config.yml");
 		if(file.exists())
 			file.delete();
 		if(!new File("OrbitFiles").exists())

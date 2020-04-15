@@ -173,7 +173,7 @@ public class OrbitMain extends JavaPlugin implements Listener {
 												paths.add(new double[]{zone[0], zone[1]+1, zone[2]});
 												data.add(new int[]{new Location(p.getWorld(), zone[0], zone[1]+1,
 														//TODO: find replacement methods
-														zone[2]).getBlock().getTypeId(), 
+														zone[2]).getBlock().getType(),
 														new Location(p.getWorld(), zone[0], zone[1]+1, 
 																zone[2]).getBlock().getData()});
 											}

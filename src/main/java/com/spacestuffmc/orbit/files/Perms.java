@@ -31,7 +31,7 @@ public class Perms {
 	 * @return ArrayList of Strings that holds permsList
 	 */
 	public static ArrayList<String> initializePerms() {
-		File file = new File("OrbitFiles\\perms.txt");
+		File file = new File("OrbitFiles\\perms.yml");
 		if(file.exists()) {
 			ArrayList<String> permsList = new ArrayList<String>();
 			try{
@@ -50,7 +50,7 @@ public class Perms {
 	/**Updates the Perms file to the according ArrayList
 	 */
 	public static void updatePerms(ArrayList<String> str) {
-		File file = new File("OrbitFiles\\perms.txt");
+		File file = new File("OrbitFiles\\perms.yml");
 		if(!new File("OrbitFiles").exists())
 			new File("OrbitFiles").mkdir();
 		try {
